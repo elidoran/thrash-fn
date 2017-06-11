@@ -1,0 +1,34 @@
+{
+  "name": "@thrash/fn",
+  "version": "0.1.0",
+  "description": "Test validity, optimizability, and performance of functions.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "mocha -R spec test/index.js",
+    "test4": "nave use 4.8 npm run test",
+    "test6": "nave use 6.11 npm run test",
+    "test8": "nave use 8.1 npm run test",
+    "tests": "npm run test4 && npm run test6 && npm run test8",
+    "coverage": "istanbul cover _mocha -- -R spec test/index.js",
+    "coverage-lcov": "istanbul cover _mocha -- -R lcovonly test/index.js"
+  },
+  "author": "Eli Doran <eli+npm@elidoran.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nave": "^2.2.3"
+  },
+  "dependencies": {
+    "@flatten/array": "^1.1.3",
+    "@optimal/fn": "^0.2.0",
+    "ansi2": "^0.2.0",
+    "comma-number": "^2.0.0",
+    "pad": "^1.1.0"
+  }
+}
