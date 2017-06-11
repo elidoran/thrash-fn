@@ -13,7 +13,7 @@
     "test8": "nave use 8.1 npm run test",
     "tests": "npm run test4 && npm run test6 && npm run test8",
     "coverage": "istanbul cover _mocha -- -R spec test/index.js",
-    "coverage-lcov": "istanbul cover _mocha -- -R lcovonly test/index.js"
+    "coverage-lcov": "istanbul cover _mocha -- -R mocha-lcov-reporter test/index.js"
   },
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
