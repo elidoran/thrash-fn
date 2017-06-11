@@ -65,7 +65,7 @@ Optional thrash options:
 9. **maxCount** - Defaults to 1 billion. The maximum loop iterations during a performance run. Same handling as above in **maxTime**. I used 1 billion because some stuff I performance test runs at approximately 50 million per second. That means it takes 20 seconds to hit 1 billion. So, I think 1 billion iterations, and 20 seconds, is likely long enough in a lot of cases. Play with different values to see how it affects your results.
 10. **result** - a listener function called every time a performance run for an input is completed. The arguments are `(result, options)`. The `result` object contains all the stats and the `options` object is the options object provided to thrash.
 
-The "input files" provide an object with options. All options are optional. An empty object will use an empty args array and no context.
+The "input files" export an object with options. All options are optional. An empty object will use an empty args array and no context.
 
 Input file options:
 
