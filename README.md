@@ -39,6 +39,8 @@ When all types are enabled the columns will be:
 
 ![example output](example-output.png)
 
+Note, [the example](example) is very simple to show the stuff instead of a "real" example. It's ops/sec is slow because it's using `setTimeout()` which has 1 millisecond as its smallest delay. Also, that makes its deviation super tiny so you see a zero in the results. Mostly, the example shows all the parts and the screenshot shows how the columns are printed.
+
 
 ## Usage
 
