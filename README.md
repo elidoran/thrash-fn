@@ -140,7 +140,7 @@ The result for each input tested with the function has:
 2. **count** - the number of times the function was called during the performance run.
 3. **rate** - the ratio of operations per second for the entire performance run
 4. **min** - the least time taken during a function call
-5. **average* - the average time taken for all function calls
+5. **average** - the average time taken for all function calls
 6. **max** - the longest time taken during a function call
 7. **variance** - the statistical variance of time taken for all function calls (sum of the squares of the difference between the time taken and the average time take)
 8. **deviation** - the statistical standard deviation of the time taken for all function calls (the square root of the variance)
