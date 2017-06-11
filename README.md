@@ -72,10 +72,10 @@ Input file options:
 1. **args** - an array of arguments to pass to the function, or, a function which will return an array of args (in case they need to be built anew for every call)
 2. **context** - an object, or a function which returns a new object, to use as a context when calling the function
 3. **validate** - a function which accepts the result returned by the function and returns true or false specifying whether the result was valid.
-4. **beforeAll** - a listener function called before a performance run begins on a function for a specific input. This is an asynchronous function with a callback as the last arg when the thrash option `async` is set to true; otherwise it's synchronous.
+4. **beforeAll** - a listener function called before a performance run begins on a function for a specific input. This is an asynchronous function with a callback as the second arg when the thrash option `async` is set to true; otherwise it's synchronous. Arguments are `(options, done)`.
 5. **before** - a synchronous listener function called before the function is called, every time, during a performance run.
 6. **after** - a synchronous listener function called after the function is called, every time, during a performance run.
-7. **afterAll** - a listener function called after a performance run finished on a function for a specific input. This is an asynchronous function with a callback as the last arg when the thrash option `async` is set to true; otherwise it's synchronous.
+7. **afterAll** - a listener function called after a performance run finished on a function for a specific input. This is an asynchronous function with a callback as the second arg when the thrash option `async` is set to true; otherwise it's synchronous. Arguments are `(options, done)`.
 
 ```javascript
 // can require+call it at once.
