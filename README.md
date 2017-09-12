@@ -44,7 +44,7 @@ Note, [the example](example) is very simple to show the stuff instead of a "real
 
 ## Usage
 
-See the [test file](test/index.js) for example calls of all styles.
+See the [test file](https://github.com/elidoran/thrash-fn/blob/master/test/index.js) for example calls of all styles.
 
 The basic usage requires a path to the directory where the input files are stored and a function to call with the input information. Then, you put a bunch of "input files" in that directory which optionally provides the arguments to the function and the context.
 
@@ -98,6 +98,7 @@ require('@thrash/fn')({
     // for each individual result add a `result` callback.
   }
 })
+
 
 // or, store it and use it repeatedly.
 var thrash = require('@thrash/fn')
@@ -153,10 +154,11 @@ The result for each input tested with the function has:
 Start thrashing all the functions you write to:
 
 1. ensure they produce the correct results (so, testing is included in thrashing for free)
-2. verify the functions are optimizable in node (v8).
+2. verify the functions are optimizable in node (V8 engine).
 3. measure how different inputs affect the performance of the function.
-3. measure performance to test if code changes affect performance significantly
-4. or, measure performance against other similar functions written by others
+4. measure performance to test if code changes affect performance significantly
+5. or, compare performance between multiple implementations
+6. run each performance test separately in its own new node instance using `spawn`.
 
 If you're writing unit tests which provide an arguments array and a context for the function and then validate it produces the correct result, then you're already doing all the work necessary to use thrash. And, switching to thrash provides the above mentioned advantages.
 
