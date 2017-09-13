@@ -12,14 +12,17 @@ require('../lib/index.js')({
   validate: true, // the default
   checkOptimize: true, // the default
 
-  inputs: 'inputs',
+  inputs: 'inputs', // in directory 'inputs'
 
+  // the function to thrash
   fn: require('./fn.js'),
 
+  // callback from each performance run
   result: function(result) {
     // use result...
   },
 
+  // final callback
   done: function(error) {
     console.log('all done. error =', error)
   }
