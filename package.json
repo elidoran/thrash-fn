@@ -22,16 +22,16 @@
   },
   "bugs": "http://github.com/elidoran/thrash-fn/issues",
   "dependencies": {
-    "@flatten/array": "^1.1.3",
-    "@optimal/fn": "^0.2.0",
-    "ansi2": "^0.2.0",
+    "@flatten/array": "^1.1.7",
+    "@optimal/fn": "^0.3.1",
+    "ansi2": "^1.0.0",
     "comma-number": "^2.0.0",
-    "pad": "^1.1.0"
+    "pad": "^2.1.0"
   },
   "devDependencies": {
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.2",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
+    "mocha": "^5.2.0",
     "nave": "^2.2.3"
   },
   "engines": {
