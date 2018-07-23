@@ -37,7 +37,7 @@ When all types are enabled the columns will be:
 4. **standard deviation** - the amount the performance varied during performance testing.
 5. **input file** - the name of the input file used for that row's results.
 
-![example output](examples/fn/example-output.png)
+![example output](https://raw.githubusercontent.com/elidoran/thrash-fn/master/example/example-output.png)
 
 Note, [the example](example) is very simple to show the stuff instead of a "real" example. It's ops/sec is slow because it's using `setTimeout()` which has 1 millisecond as its smallest delay. Also, that makes its deviation super tiny so you see a zero in the results. Mostly, the example shows all the parts and the screenshot shows how the columns are printed.
 
