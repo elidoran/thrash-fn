@@ -1,10 +1,8 @@
-var assert, join, thrash
+const assert  = require('assert')
+const join    = require('path').join
+const resolve = require('path').resolve
 
-assert  = require('assert')
-join    = require('path').join
-resolve = require('path').resolve
-
-thrash = require('../lib/index.js')
+const thrash = require('../lib/index.js')
 
 function assertProps(result) {
   assert(result, 'should have a result')
