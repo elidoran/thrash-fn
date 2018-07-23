@@ -10,10 +10,10 @@
   ],
   "scripts": {
     "test": "mocha -R spec test/index.js",
-    "test4": "nave use 4.8 npm run test",
-    "test6": "nave use 6.11 npm run test",
-    "test8": "nave use 8.5 npm run test",
-    "tests": "npm run test4 && npm run test6 && npm run test8",
+    "test6": "nave use 6 npm run test",
+    "test8": "nave use 8 npm run test",
+    "test10": "nave use 10 npm run test",
+    "tests": "npm run test6 && npm run test8 && npm run test10",
     "coverage": "istanbul cover _mocha -- -R mocha-lcov-reporter -R spec test/index.js"
   },
   "repository": {
@@ -36,6 +36,6 @@
     "nave": "^2.2.3"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   }
 }
