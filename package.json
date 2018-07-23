@@ -6,8 +6,7 @@
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "main": "lib/index.js",
   "files": [
-    "lib",
-    "examples/fn/example-output.png"
+    "lib"
   ],
   "scripts": {
     "test": "mocha -R spec test/index.js",
