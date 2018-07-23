@@ -1,6 +1,5 @@
 # @thrash/fn
 [![Build Status](https://travis-ci.org/elidoran/thrash-fn.svg?branch=master)](https://travis-ci.org/elidoran/thrash-fn)
-[![Dependency Status](https://gemnasium.com/elidoran/thrash-fn.png)](https://gemnasium.com/elidoran/thrash-fn)
 [![npm version](https://badge.fury.io/js/%40thrash%2Ffn.svg)](http://badge.fury.io/js/%40thrash%2Ffn)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/thrash-fn/badge.svg?branch=master)](https://coveralls.io/github/elidoran/thrash-fn?branch=master)
 
