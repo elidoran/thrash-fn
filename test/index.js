@@ -20,7 +20,7 @@ function assertProps(result) {
 
 describe('test thrash fn', function() {
 
-  describe.skip('synchronous', function() {
+  describe('synchronous', function() {
 
     // 1. a simple function which doesn't need input or context.
     it('with empty input array and no context', function(done) {
@@ -389,7 +389,7 @@ describe('test thrash fn', function() {
   describe('asynchronous', function() {
 
      // 1. a simple function which doesn't need input or context.
-     it.only('with empty input array and no context', function(done) {
+     it('with empty input array and no context', function(done) {
 
        let called = false
 
@@ -404,6 +404,7 @@ describe('test thrash fn', function() {
          validate: false,
          checkOptimize: true,
 
+         name: 'emptyInputAndNoContext',
          fn: function(callback) {
            called = true
            process.nextTick(callback)
@@ -435,6 +436,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
+         name: 'inputArrayAndNoContext',
          fn: function(a, b, c, callback) {
            called = true
            assert(a != null)
@@ -469,7 +471,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
-         fn: function(callback) {
+         fn: function emptyInputAndContext(callback) {
            called = true
            assert(this.a != null)
            process.nextTick(callback)
@@ -501,6 +503,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
+         name: 'bothInputArrayAndContext',
          fn: function(a, b, c, callback) {
            called = true
            assert(a != null)
@@ -536,6 +539,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
+         name: 'validResult',
          fn: function(n1, n2, callback) {
            called = true
            assert(n1 != null)
@@ -570,6 +574,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
+         name: 'invalidResult',
          fn: function(n1, n2, callback) {
            called = true
            assert(n1 != null)
@@ -602,6 +607,7 @@ describe('test thrash fn', function() {
          maxTime : 1,
          maxCount: 12,
 
+         name: 'errorResult',
          fn: function(n1, n2, callback) {
            callback(new Error('testing'))
          },
@@ -656,6 +662,7 @@ describe('test thrash fn', function() {
        var result, options, beforeAll, before, after, afterAll
 
        beforeAll = before = after = afterAll = false
+
        thrash({
          async: true,
 
@@ -667,6 +674,7 @@ describe('test thrash fn', function() {
          validate: false,
          checkOptimize: false,
 
+         name: 'testListeners',
          fn: function(callback) {
            process.nextTick(callback)
          },
@@ -705,6 +713,7 @@ describe('test thrash fn', function() {
          validate: false,
          checkOptimize: false,
 
+         name: 'withoutResultListener',
          fn: function(callback) {
            process.nextTick(callback)
          },
