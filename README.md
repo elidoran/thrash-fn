@@ -49,7 +49,7 @@ The basic usage requires a path to the directory where the input files are store
 
 Required thrash options:
 
-1. **inputs** - a path to a directory containing "requireable" files which export an object with "input options" as described below.
+1. **inputs** - a path to a directory containing "requirable" files which export an object with "input options" as described below.
 2. **fn** - a function to "thrash". When setting the `spawn` option to true the `fn` property should be a path to a "requireable" file exporting the function to use. The spawned child process will "require" it.
 3. **done** - a standard callback expecting `(error, result)`. (TODO: provide a cumulative results array to this final callback). This is called after the function has been run on all inputs.
 
