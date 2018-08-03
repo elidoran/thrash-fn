@@ -8,6 +8,16 @@
   "files": [
     "lib"
   ],
+  "keywords": [
+    "thrash",
+    "thrashing",
+    "test",
+    "benchmark",
+    "validate",
+    "performance",
+    "compare",
+    "measure"
+  ],
   "scripts": {
     "test": "mocha -R spec test/index.js",
     "test6": "nave use 6 npm run test",
