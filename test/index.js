@@ -726,7 +726,7 @@ describe('test thrash fn', function() {
 
    })
 
-  describe.skip('spawn', function() {
+  describe('spawn', function() {
 
     // 1. a simple function which doesn't need input or context.
     it('with empty input array and no context', function(done) {
